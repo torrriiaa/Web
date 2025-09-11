@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Сторінка з формою</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <a id="top"></a>
+    <h1>Проєктування та розробка веб-застосунків</h1>
+    <h2>Лабораторна робота №1</h2>
+    <h2>Виконала студентка групи АнД-32 Котелевець Вікторія Дмитрівна</h2>
+    <nav>
+        <a href="web_lab1.html">Повернутися на головну</a>
+    </nav>
+    <h2>Опис завдання</h2>
+    <p>Потрібно розробити форму для введення товару до інтернет-магазину, заповнивши наступні данні:<br>
+• дані про товар, включають назву товару, тип товару(вибирається зі
+списку), опис, поточну ціну, ціну зі знижкою;<br>
+• дані про виробника, включають назву, електрону пошту, посилання на
+веб-сайт, коментарі.</p>
+    <!-- Форма -->
+    <form action="#" method="post">
+
+        <!-- Дані про товар -->
+        <fieldset>
+            <legend>Дані про товар</legend>
+
+            <label for="product-name">Назва товару:</label><br>
+            <input type="text" id="product-name" name="product-name" required><br><br>
+
+            <label for="product-type">Тип товару:</label><br>
+            <select id="product-type" name="product-type">
+                <option value="electronics">Електроніка</option>
+                <option value="clothes">Одяг</option>
+                <option value="books">Книги</option>
+                <option value="other">Інше</option>
+            </select><br><br>
+
+            <label for="description">Опис:</label><br>
+            <textarea id="description" name="description" rows="4" cols="40"></textarea><br><br>
+
+            <label for="price">Поточна ціна:</label><br>
+            <input type="number" id="price" name="price" step="5" min="0" required> грн<br><br>
+
+            <label for="discount-price">Ціна зі знижкою:</label><br>
+            <input type="number" id="discount-price" name="discount-price" step="5" min="0"> грн<br>
+        </fieldset>
+
+        <br>
+
+        <!-- Дані про виробника -->
+        <fieldset>
+            <legend>Дані про виробника</legend>
+
+            <label for="manufacturer-name">Назва виробника:</label><br>
+            <input type="text" id="manufacturer-name" name="manufacturer-name" required><br><br>
+
+            <label for="email">Електронна пошта:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="website">Веб-сайт:</label><br>
+            <input type="url" id="website" name="website"><br><br>
+
+            <label for="comments">Коментарі:</label><br>
+            <textarea id="comments" name="comments" rows="3" cols="40"></textarea><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Кнопка -->
+        <button type="submit">Відправити</button>
+    </form>
+<br><a href="#top" style="display: block; text-align: center;">На початок</a>
+
+</body>
+</html>

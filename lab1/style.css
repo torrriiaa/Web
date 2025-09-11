@@ -1,0 +1,142 @@
+/* Загальні стилі */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #e8f4fa; /* ніжно-блакитний фон */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка */
+header, h1, h2 {
+    text-align: center;
+    color: #2c4d63;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #205b86;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #3c6e91;
+}
+p {text-align: center;}
+/* Навігація */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #b9e3f8;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    color: #205b86;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #7ccbef;
+    color: white;
+}
+
+/* Списки */
+ul, ol, dl {
+    margin: 20px auto;
+    width: 60%;
+    padding: 10px;
+    background-color: #f2fbff;
+    border: 1px solid #b9e3f8;
+    border-radius: 10px;
+}
+
+/* Таблиця */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    background-color: #f9fdff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #b9e3f8;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #cceafc;
+    color: #123f5c;
+}
+
+/* Форма */
+form {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9fdff;
+    border: 2px solid #b9e3f8;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+fieldset {
+    border: 1px solid #7ccbef;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #205b86;
+}
+
+input, select, textarea, button {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #b9e3f8;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #7ccbef;
+    box-shadow: 0 0 5px #7ccbef;
+}
+
+/* Кнопка */
+button {
+    background-color: #7ccbef;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #205b86;
+}
+
+/* Посилання "На початок" */
+a[href="#top"] {
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    color: #205b86;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a[href="#top"]:hover {
+    color: #7ccbef;
+}
