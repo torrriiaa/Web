@@ -1,0 +1,65 @@
+:root{
+  --baby-blue: #7ccbef;
+  --navy: #000080;
+  --base-font: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+body{
+  margin: 0;
+  font-family: var(--base-font);
+  line-height: 1.45;
+  padding: 24px;
+  background: #fff;
+  color: #000;
+}
+
+/* посилання */
+a{
+  color: #800000;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+/* зображення */
+.images img{
+  max-width: 400%;
+  margin: 40px;
+}
+img.left{
+  float: left;
+}
+img.right{
+  float: right;
+}
+
+/* абзаци */
+.p1{
+  background-color: var(--baby-blue);
+  font-style: italic;
+  padding: 8px;
+}
+.p2{
+  text-decoration: underline;
+}
+.p3{
+  margin-top: 1em;
+}
+.p3 .lastword{
+  color: var(--navy);
+  font-weight: bold;
+}
+
+/* очищення обтікання */
+main::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* футер */
+footer{
+  margin-top: 2em;
+  text-align: right;
+}
