@@ -59,10 +59,6 @@ a{
   text-decoration: none;
 }
 a:visited{ color: var(--burgundy); }
-a:hover, a:focus{
-  text-decoration: underline;
-  outline: none;
-}
 
 /* футер */
 footer{
