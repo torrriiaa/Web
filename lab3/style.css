@@ -1,0 +1,103 @@
+/* Заголовок */
+.site-header {
+  background: #AAB7A6;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.site-header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #2B2B2B;
+  margin: 0;
+}
+
+/* Навігація */
+.site-nav {
+  background: #F8F6F0;
+}
+
+.site-nav ul {
+  display: flex;    
+  justify-content: center;
+  gap: 7rem;
+  margin: 0;
+  padding: 1rem 0;
+  list-style: none;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2rem;
+  color: #2B2B2B;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: #5A8C6F;
+}
+
+/* Основний макет */
+.layout {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 2rem auto;
+  gap: 2rem;
+}
+
+/* Ліва колонка */
+.left-column {
+  flex: 1;
+  width: 1000px;
+  
+}
+
+
+/* Права колонка (новини + футер) */
+.right-column {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#about {
+    background: #F8F6F0;
+    padding: 1rem;
+    
+    
+}/* Новини */
+#news {
+
+  background: #F8F6F0;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+#news article {
+  margin-bottom: 1rem;
+  border-left: 4px solid #5a8c6f;
+  padding-left: 0.8rem;
+}
+
+#news h2 {
+  margin-top: 0;
+  color: #2B2B2B;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: #2B2B2B;
+  margin: 0;
+}
+
+/* Футер */
+footer {
+  background: #AAB7A6;
+  text-align: center;
+  padding: 1rem;
+  height: 440px; /* так само як блок новин */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

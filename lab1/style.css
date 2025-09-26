@@ -136,7 +136,3 @@ a[href="#top"] {
     font-weight: bold;
     text-decoration: none;
 }
-
-a[href="#top"]:hover {
-    color: #7ccbef;
-}
