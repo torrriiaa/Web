@@ -1,23 +1,36 @@
 /* Заголовок */
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background: #f8f6f0;
+}
+
+.defaultText {
+  font-size: 30px;
+}
+
+.headerText {
+  text-align: center;
+  font-size: 40px;
+  color: #2b2b2b;
+}
+
 .site-header {
-  background: #AAB7A6;
+  background: #aab7a6;
   text-align: center;
   padding: 4rem 1rem;
+  box-sizing: border-box;
 }
 .site-header h1 {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
-  color: #2B2B2B;
+  color: #2b2b2b;
   margin: 0;
 }
 
-/* Навігація */
-.site-nav {
-  background: #F8F6F0;
-}
-
 .site-nav ul {
-  display: flex;    
+  display: flex;
   justify-content: center;
   gap: 7rem;
   margin: 0;
@@ -29,51 +42,45 @@
   text-decoration: none;
   font-family: "Playfair Display", sans-serif;
   font-size: 2rem;
-  color: #2B2B2B;
+  color: #2b2b2b;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .site-nav a:hover,
 .site-nav a.active {
-  color: #5A8C6F;
+  color: #5a8c6f;
 }
 
 /* Основний макет */
 .layout {
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
   justify-content: space-between;
-  max-width: 1300px;
-  margin: 2rem auto;
-  gap: 2rem;
 }
 
 /* Ліва колонка */
 .left-column {
-  flex: 1;
-  width: 1000px;
-  
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
+.listText {
+  padding: 10px;
+}
 
-/* Права колонка (новини + футер) */
+/* Права колонка*/
 .right-column {
-  width: 440px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
-#about {
-    background: #F8F6F0;
-    padding: 1rem;
-    
-    
-}/* Новини */
-#news {
 
-  background: #F8F6F0;
+#news {
   padding: 1rem;
   flex-grow: 1;
+  box-sizing: border-box;
 }
 
 #news article {
@@ -84,19 +91,20 @@
 
 #news h2 {
   margin-top: 0;
-  color: #2B2B2B;
+  color: #2b2b2b;
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
-  color: #2B2B2B;
+  color: #2b2b2b;
   margin: 0;
 }
 
 /* Футер */
 footer {
-  background: #AAB7A6;
+  background: #aab7a6;
   text-align: center;
   padding: 1rem;
-  height: 440px; /* так само як блок новин */
+  box-sizing: border-box;
+  height: 80px; 
   display: flex;
   align-items: center;
   justify-content: center;

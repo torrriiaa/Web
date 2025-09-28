@@ -1,96 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>An Evening of Timeless Music</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An Evening of Timeless Music</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Заголовок -->
+    <header class="site-header">
+      <h1>An Evening of Timeless Music</h1>
+    </header>
 
-  <!-- Заголовок -->
-  <header class="site-header">
-    <h1>An Evening of Timeless Music</h1>
-  </header>
+    <!-- Навігація -->
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#performers">Performers</a></li>
+        <li><a href="#news">News</a></li>
+      </ul>
+    </nav>
 
-  <!-- Навігація -->
-  <nav class="site-nav">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#location">Location</a></li>
-      <li><a href="#performers">Performers</a></li>
-      <li><a href="#news">News</a></li>
-    </ul>
-  </nav>
+    <!-- Основний контейнер -->
+    <main class="layout">
+      <!-- Ліва колонка -->
+      <div class="left-column">
+        <!-- About -->
+        <section id="about" class="section">
+          <h2 class="headerText">About the Event</h2>
+          <p class="defaultText">
+            Our concert series brings together the finest talents and cultural
+            traditions, creating an evening where art, history, and music unite.
+            Hosted in an atmosphere of timeless elegance, the event is designed
+            for those who value beauty, refinement, and true artistry.
+          </p>
+        </section>
 
-  <!-- Основний контейнер -->
-  <main class="layout">
-    <!-- Ліва колонка -->
-    <div class="left-column">
-      <!-- About -->
-      <section id="about" class="section">
-        <h2>About the Event</h2>
-        <p>
-          Our concert series brings together the finest talents and cultural traditions, 
-          creating an evening where art, history, and music unite. Hosted in an atmosphere 
-          of timeless elegance, the event is designed for those who value beauty, refinement, 
-          and true artistry.
-        </p>
-      </section>
+        <!-- Location -->
+        <section id="location" class="section">
+          <h2 class="headerText">Location</h2>
+          <p class="defaultText">
+            The concert will take place at the Paris Philharmonic, located in
+            the historic center of the city. With its exquisite architecture and
+            exceptional acoustics, the hall offers the perfect setting for an
+            unforgettable musical experience.
+          </p>
+          <div class="map">
+            <img src="map.png" alt="Paris Philharmonic Location" />
+          </div>
+        </section>
 
-      <!-- Location -->
-      <section id="location" class="section">
-        <h2>Location</h2>
-        <p>
-          The concert will take place at the Paris Philharmonic, located in the historic 
-          center of the city. With its exquisite architecture and exceptional acoustics, 
-          the hall offers the perfect setting for an unforgettable musical experience.
-        </p>
-        <div class="map">
-          <img src="map.png" alt="Paris Philharmonic Location">
-        </div>
-      </section>
+        <!-- Performers -->
+        <section id="performers" class="section">
+          <h2 class="headerText">Performers</h2>
+          <ul>
+            <li class="defaultText listText">
+              Elena Moretti (Soprano): Internationally acclaimed soprano known
+              for her breathtaking performances on the world’s greatest stages.
+            </li>
+            <li class="defaultText listText">
+              Alexander Nex (Piano): A virtuoso pianist whose artistry bridges
+              classical tradition and modern interpretation.
+            </li>
+            <li class="defaultText listText">
+              Chamber Ensemble "Armonia": A group of talented musicians bringing
+              life to masterpieces of Mozart and Chopin.
+            </li>
+          </ul>
+        </section>
+      </div>
 
-      <!-- Performers -->
-      <section id="performers" class="section">
-        <h2>Performers</h2>
-        <ul>
-          <li><strong>Elena Moretti (Soprano):</strong> Internationally acclaimed soprano known for her breathtaking performances on the world’s greatest stages.</li>
-          <li><strong>Alexander Nex (Piano):</strong> A virtuoso pianist whose artistry bridges classical tradition and modern interpretation.</li>
-          <li><strong>Chamber Ensemble "Armonia":</strong> A group of talented musicians bringing life to masterpieces of Mozart and Chopin.</li>
-        </ul>
-      </section>
-    </div>
+      <!-- Права колонка -->
+      <aside class="right-column">
+        <!-- News -->
+        <section id="news" class="section">
+          <h2 class="headerText">News</h2>
 
-    <!-- Права колонка -->
-    <aside class="right-column">
-      <!-- News -->
-      <section id="news" class="section">
-        <h2>News</h2>
-        <article>
-          <h3>City Festival Week</h3>
-          <p>Celebrating Art in Every Corner – A cultural program transforming the city with concerts, exhibitions, and performances.</p>
-        </article>
-        <article>
-          <h3>New Season at the Grand Philharmonic Hall</h3>
-          <p>Upcoming events that highlight the best of international and local talent.</p>
-        </article>
-        <article>
-          <h3>Music & Heritage</h3>
-          <p>A series of articles on the timeless influence of classical music in modern life.</p>
-        </article>
-        <article>
-          <h3>Art & Architecture</h3>
-          <p>Exploring how historic venues enhance the experience of live performance.</p>
-        </article>
-      </section>
+          <p class="defaultText">
+            City Festival Week: Celebrating Art in Every Corner – A cultural
+            program transforming the city with concerts, exhibitions, and
+            performances.
+          </p>
 
-      <!-- Footer -->
-      <footer>
-        <p>© 2025 Grand Philharmonic Concert. All rights reserved.</p>
-      </footer>
-    </aside>
-  </main>
-</body>
+          <p class="defaultText">
+            New Season at the Grand Philharmonic Hall: Upcoming events that
+            highlight the best of international and local talent.
+          </p>
+
+          <p class="defaultText">
+            Music & Heritage: A series of articles on the timeless influence of
+            classical music in modern life.
+          </p>
+
+          <p class="defaultText">
+            Art & Architecture: Exploring how historic venues enhance the
+            experience of live performance.
+          </p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          <p>© 2025 Grand Philharmonic Concert. All rights reserved.</p>
+        </footer>
+      </aside>
+    </main>
+  </body>
+</html>
