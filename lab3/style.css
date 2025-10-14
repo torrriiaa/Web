@@ -1,5 +1,3 @@
-/* Заголовок */
-
 body {
   margin: 0;
   box-sizing: border-box;
@@ -98,7 +96,6 @@ body {
   margin: 0;
 }
 
-/* Футер */
 footer {
   background: #aab7a6;
   text-align: center;

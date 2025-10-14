@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Академія Танців «Лінія Руху»</title>
+  <meta name="description" content="Школа танців «Лінія Руху» — класи для дітей та дорослих, професійні тренери та зручний розклад." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- САЙТ -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="#" data-page="home" aria-label="Головна — Лінія Руху">
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor"/></svg>
+        <span class="brand">Лінія Руху</span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Головна навігація">
+        <button class="nav-toggle" aria-expanded="false" aria-label="Відкрити меню">
+          <span class="hamburger"></span>
+        </button>   
+        <ul class="nav-list">
+          <li><a href="#home" data-page="home" class="nav-link">Головна</a></li>
+          <li><a href="#classes" data-page="classes" class="nav-link">Класи</a></li>
+          <li><a href="#trainers" data-page="trainers" class="nav-link">Тренери & Розклад</a></li>
+          <li><a href="#contact" data-page="contact" class="nav-link">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- HERO / ГОЛОВНА -->
+    <section id="home" class="page active" aria-labelledby="home-title">
+      <div class="container hero">
+        <div class="hero-content">
+          <h1 id="home-title">Академія Танців «Лінія Руху»</h1>
+          <p class="lead">Рух — наша мова. Класи для всіх рівнів: від дитячих курсів до професійного підготовлення.</p>
+          <div class="hero-ctas">
+            <button class="btn btn-primary" data-open-modal data-class="Загальні класи">Записатись</button>
+            <a class="btn btn-ghost" href="#classes" data-page="classes">Переглянути класи</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <!-- декоративна напівпрозора фігура з кольором #26BDBD в дуже легкій прозорості -->
+          <div class="accent-shape"></div>
+          <div class="hero-card">
+            <h3>Новачки? Можна почати сьогодні</h3>
+            <p>Пробне заняття — перше безкоштовно. Групи ранкові та вечірні.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КЛАСИ -->
+    <section id="classes" class="page" aria-labelledby="classes-title">
+      <div class="container">
+        <h2 id="classes-title">Наші класи</h2>
+        <p class="section-sub">Різні стилі та формати — індивідуально та в групі.</p>
+
+        <div class="filters">
+          <label>Фільтр:
+            <select id="class-filter" aria-label="Фільтр класів">
+              <option value="all">Усі</option>
+              <option value="kids">Дитячі</option>
+              <option value="adult">Дорослі</option>
+              <option value="street">Street / Hip-Hop</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="cards grid">
+          <!-- Картка класу (повторювана) -->
+          <article class="card class-card" data-type="adult">
+            <div class="card-media" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.08), rgba(0,0,0,0.02));">
+              <svg viewBox="0 0 24 24" class="card-icon" aria-hidden="true"><path d="M12 2L15 8H9L12 2zM4 22h16v-2H4v2z" /></svg>
+            </div>
+            <div class="card-body">
+              <h3>Contemporary</h3>
+              <p>Плавна техніка, робота з тілом та вираженням — підходить для різних рівнів.</p>
+              <div class="card-actions">
+                <button class="btn btn-sm" data-open-modal data-class="Contemporary">Записатись</button>
+                <button class="btn btn-link" data-more>Деталі</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card class-card" data-type="street">
+            <div class="card-media">
+              <svg viewBox="0 0 24 24" class="card-icon" aria-hidden="true"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10z"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Hip-Hop / Street</h3>
+              <p>Енергійні комбінації, groove та імпровізація. Фокус на сценічності.</p>
+              <div class="card-actions">
+                <button class="btn btn-sm" data-open-modal data-class="Hip-Hop">Записатись</button>
+                <button class="btn btn-link" data-more>Деталі</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card class-card" data-type="kids">
+            <div class="card-media">
+              <svg viewBox="0 0 24 24" class="card-icon" aria-hidden="true"><path d="M12 2L12 22M2 12h20" /></svg>
+            </div>
+            <div class="card-body">
+              <h3>Kids (6–12)</h3>
+              <p>Ігрові заняття, моторика, базова техніка. Підхід для дітей.</p>
+              <div class="card-actions">
+                <button class="btn btn-sm" data-open-modal data-class="Kids">Записатись</button>
+                <button class="btn btn-link" data-more>Деталі</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card class-card" data-type="adult">
+            <div class="card-media">
+              <svg viewBox="0 0 24 24" class="card-icon" aria-hidden="true"><path d="M12 2L12 22M2 12h20" /></svg>
+            </div>
+            <div class="card-body">
+              <h3>Практика сценічного виконання</h3>
+              <p>Підготовка до виступів: хореографія, постановка, робота з музикою.</p>
+              <div class="card-actions">
+                <button class="btn btn-sm" data-open-modal data-class="Stage Practice">Записатись</button>
+                <button class="btn btn-link" data-more>Деталі</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ТРЕНЕРИ ТА РОЗКЛАД -->
+    <section id="trainers" class="page" aria-labelledby="trainers-title">
+      <div class="container">
+        <h2 id="trainers-title">Тренери & Розклад</h2>
+        <p class="section-sub">Професіонали, які працюють з кожним індивідуально.</p>
+
+        <div class="trainers-grid">
+          <div class="trainer-card">
+            <img alt="Фото тренера Олексій" src="#" class="trainer-photo" aria-hidden="true">
+            <div class="trainer-body">
+              <h3>Олексій Марченко</h3>
+              <p class="muted">Хореограф, contemporary</p>
+              <p>Понад 10 років досвіду виступів та постановок.</p>
+            </div>
+          </div>
+
+          <div class="trainer-card">
+            <img alt="Фото тренера Марія" src="#" class="trainer-photo" aria-hidden="true">
+            <div class="trainer-body">
+              <h3>Марія Коваленко</h3>
+              <p class="muted">Street / Hip-Hop</p>
+              <p>Сертифікований тренер, робота з молодими талантами.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="schedule-title">Розклад (тиждень)</h3>
+        <div class="schedule">
+          <table aria-describedby="schedule-desc">
+            <caption id="schedule-desc" class="sr-only">Розклад занять на тиждень</caption>
+            <thead>
+              <tr><th>День</th><th>09:00</th><th>18:00</th><th>19:30</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Понеділок</td><td>Kids</td><td>Contemporary</td><td>Stage Practice</td></tr>
+              <tr><td>Вівторок</td><td>-</td><td>Hip-Hop</td><td>Contemporary</td></tr>
+              <tr><td>Середа</td><td>Kids</td><td>Stage Practice</td><td>Hip-Hop</td></tr>
+              <tr><td>Четвер</td><td>-</td><td>Contemporary</td><td>Open Practice</td></tr>
+              <tr><td>П'ятниця</td><td>Kids</td><td>Hip-Hop</td><td>Showcase Prep</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТИ -->
+    <section id="contact" class="page" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contact-title">Контакти</h2>
+          <p class="muted">Ми в центрі міста — зручно добиратись громадським транспортом.</p>
+
+          <address class="contact-info">
+            <p><strong>Адреса:</strong> вул. Танцювальна, 12, м. Київ</p>
+            <p><strong>Телефон:</strong> <a href="tel:+380501234567">+38 (050) 123-45-67</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@liniyarukhu.ua">info@liniyarukhu.ua</a></p>
+          </address>
+
+          <div class="opening">
+            <p><strong>Графік:</strong> Пн-Пт 09:00–21:00, Сб 10:00–16:00</p>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <label>
+            Ім'я
+            <input type="text" name="name" required placeholder="Ваше ім'я" />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="email@domain.com" />
+          </label>
+
+          <label>
+            Телефон
+            <input type="tel" name="phone" placeholder="+380..." />
+          </label>
+
+          <label>
+            Повідомлення
+            <textarea name="message" rows="4" placeholder="Як ми можемо допомогти?"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Надіслати</button>
+            <button type="reset" class="btn btn-ghost">Очистити</button>
+          </div>
+          <p id="form-feedback" role="status" aria-live="polite" class="form-feedback"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- МОДАЛ: Запис -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Закрити">&times;</button>
+      <h3 id="modal-title">Запис на заняття</h3>
+      <p id="modal-class" class="muted">Оберіть зручний час</p>
+
+      <form id="signup-form" class="signup-form" novalidate>
+        <input type="hidden" name="class" id="signup-class" />
+        <label>Ім'я<input name="sname" required placeholder="Ваше ім'я" /></label>
+        <label>Email<input type="email" name="semail" required placeholder="email@domain.com" /></label>
+        <label>Телефон<input type="tel" name="sphone" placeholder="+380..." /></label>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Підтвердити</button>
+          <button class="btn btn-ghost" type="button" data-modal-close>Відмінити</button>
+        </div>
+        <p id="signup-feedback" role="status" aria-live="polite" class="form-feedback"></p>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Лінія Руху</strong>
+        <p class="muted">Школа танців — рухайся з нами</p>
+      </div>
+      <nav aria-label="Футер навігація">
+        <ul class="footer-links">
+          <li><a href="#classes" data-page="classes">Класи</a></li>
+          <li><a href="#trainers" data-page="trainers">Тренери</a></li>
+          <li><a href="#contact" data-page="contact">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- SCRIPT: вбудований JS (для зручності — два файли просила, тож JS у HTML) -->
+  <script>
+    // ===========================
+    // Коротка логіка SPA / взаємодій
+    // ===========================
+    (function () {
+      const root = document.documentElement;
+      const navToggle = document.querySelector('.nav-toggle');
+      const navList = document.querySelector('.nav-list');
+      const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+      const pages = Array.from(document.querySelectorAll('.page'));
+      const modal = document.getElementById('modal');
+      const modalClose = modal.querySelector('.modal-close');
+      const signupInputs = document.getElementById('signup-form');
+      const signupClassInput = document.getElementById('signup-class');
+      const modalClassText = document.getElementById('modal-class');
+      const openModalButtons = Array.from(document.querySelectorAll('[data-open-modal]'));
+      const modalCloseBtns = Array.from(document.querySelectorAll('[data-modal-close]'));
+
+      // Mobile menu toggle
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        navList.classList.toggle('open');
+      });
+
+      // Navigation: просто показує сторінки (без перезавантаження)
+      function showPage(name, push = true) {
+        pages.forEach(p => p.classList.toggle('active', p.id === name));
+        navLinks.forEach(a => a.classList.toggle('active', a.dataset.page === name));
+        if (push) {
+          history.pushState({ page: name }, '', `#${name}`);
+        }
+        // закрити моб.меню
+        navList.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+
+      // Навігаційні кліки
+      document.addEventListener('click', (e) => {
+        const a = e.target.closest('[data-page]');
+        if (a) {
+          e.preventDefault();
+          const page = a.dataset.page;
+          if (page) showPage(page);
+        }
+      });
+
+      // Попередній стан (якщо є hash)
+      function initFromHash() {
+        const hash = location.hash.replace('#','') || 'home';
+        const valid = pages.some(p => p.id === hash) ? hash : 'home';
+        showPage(valid, false);
+      }
+      initFromHash();
+
+      // Кнопки відкриття модалки (передають назву класу)
+      openModalButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const cls = btn.dataset.class || 'Заняття';
+          openModal(cls);
+        });
+      });
+
+      function openModal(className) {
+        signupClassInput.value = className;
+        modalClassText.textContent = `Клас: ${className}`;
+        modal.setAttribute('aria-hidden', 'false');
+        modal.classList.add('open');
+        // фокус на перший інпут
+        const first = modal.querySelector('input, button, textarea');
+        if (first) first.focus();
+      }
+
+      function closeModal() {
+        modal.setAttribute('aria-hidden', 'true');
+        modal.classList.remove('open');
+      }
+
+      modalClose.addEventListener('click', closeModal);
+      modalCloseBtns.forEach(b => b.addEventListener('click', closeModal));
+      modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+      // Простенька валідація форм і демонстрація відправки (без сервера)
+      const contactForm = document.getElementById('contact-form');
+      const feedback = document.getElementById('form-feedback');
+
+      function showFeedback(el, msg, ok = true) {
+        el.textContent = msg;
+        el.classList.toggle('ok', ok);
+        setTimeout(() => { el.textContent = ''; el.classList.remove('ok'); }, 4500);
+      }
+
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = contactForm.name.value.trim();
+        const email = contactForm.email.value.trim();
+        if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          showFeedback(feedback, 'Будь ласка, заповніть коректно імʼя та email.', false);
+          return;
+        }
+        // Імітуємо успішну відправку
+        showFeedback(feedback, 'Дякуємо! Ми звʼяжемося з вами найближчим часом.', true);
+        contactForm.reset();
+      });
+
+      signupInputs.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = signupInputs.sname.value.trim();
+        const email = signupInputs.semail.value.trim();
+        const fb = document.getElementById('signup-feedback');
+        if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          showFeedback(fb, 'Заповніть імʼя та коректний email.', false);
+          return;
+        }
+        showFeedback(fb, `Ви записані на ${signupClassInput.value}. Чекайте листа на ${email}.`, true);
+        signupInputs.reset();
+        setTimeout(closeModal, 1400);
+      });
+
+      // Фільтр класів
+      const classFilter = document.getElementById('class-filter');
+      const classCards = Array.from(document.querySelectorAll('.class-card'));
+      classFilter.addEventListener('change', (e) => {
+        const val = e.target.value;
+        classCards.forEach(c => {
+          c.style.display = (val === 'all' || c.dataset.type === val) ? '' : 'none';
+        });
+      });
+
+      // М'яке скролювання при переході по anchor (для кращого UX)
+      document.documentElement.style.scrollBehavior = 'smooth';
+
+      // Обробка навігації назад/вперед
+      window.addEventListener('popstate', (e) => {
+        const page = (location.hash.replace('#','')) || 'home';
+        showPage(page, false);
+      });
+
+      // Дрібні покращення: visible focus & reduced motion respect
+      // (реалізовано в CSS)
+    })();
+  </script>
+</body>
+</html>
