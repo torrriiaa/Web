@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(180deg, #f4f9ff 0%, #e8f3f8 100%);
+  color: #222;
+}
+
+/* ===== Header ===== */
+.header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #0073ff;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.student { margin-top: 8px; font-size: 16px; }
+
+/* ===== Контейнер ===== */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ===== Інформація ===== */
+.task-info, .form-section {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.task-info h2, .form-section h2 {
+  color: #0073ff;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* ===== Форма ===== */
+#taskForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#taskForm input, #taskForm button {
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+#taskForm input:focus {
+  border-color: #0073ff;
+  box-shadow: 0 0 6px rgba(0,115,255,0.3);
+}
+
+#taskForm button {
+  background: linear-gradient(135deg, #0073ff, #00b7ff);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+#taskForm button:hover {
+  background: linear-gradient(135deg, #ff9a00, #ff6600);
+  transform: translateY(-2px);
+}
+
+/* ===== Результати ===== */
+.result-section h2 { text-align: center; color: #0073ff; }
+
+#rezult {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.group h3 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* ===== Картки ===== */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+.card h4 { margin: 0 0 8px; color: #0073ff; font-size: 20px; }
+.card p { margin: 5px 0; font-size: 15px; }
+.desc { color: #555; font-style: italic; }
+.status { margin-top: 8px; font-weight: 700; text-align: center; }
+
+/* ===== Прогрес ===== */
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.progress {
+  flex-grow: 1;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress .bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #0073ff, #00b7ff);
+  border-radius: 8px;
+  animation: fillProgress 1.5s ease forwards;
+}
+
+.percent {
+  font-weight: 700;
+  color: #0073ff;
+  min-width: 40px;
+  text-align: right;
+}
+
+@keyframes fillProgress {
+  from { width: 0; }
+  to { width: var(--progress); }
+}
+
+/* ===== Кольори статусів ===== */
+.card.done { border-left: 6px solid #00b894; }
+.card.active { border-left: 6px solid #0984e3; }
+.card.future { border-left: 6px solid #fdcb6e; }
+
+.empty { text-align: center; color: #888; font-style: italic; }
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #0073ff;
+  color: #fff;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  #taskForm { flex-direction: column; align-items: center; }
+  #taskForm input, #taskForm button { width: 90%; }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛР6 – Варіант 9</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="lab9.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Лабораторна робота №6</h1>
+    <p class="student">Студент: <b>Котелевець Вікторія Дмитрівна</b> · Група АНД-32 · Варіант 9</p>
+  </header>
+
+  <main class="container">
+    <section class="task-info">
+      <h2>Завдання</h2>
+      <p>Створити планувальник задач. Кожна задача має:</p>
+      <ul>
+        <li>назву;</li>
+        <li>опис;</li>
+        <li>дату початку;</li>
+        <li>тривалість у днях.</li>
+      </ul>
+      <p>Задачі поділяються на три групи:</p>
+      <ul>
+        <li>✅ Виконані</li>
+        <li>🔄 У процесі</li>
+        <li>⏳ Майбутні</li>
+      </ul>
+    </section>
+
+    <section class="form-section">
+      <h2>Додати нову задачу</h2>
+      <form id="taskForm">
+        <input type="text" id="taskName" placeholder="Назва задачі" required>
+        <input type="text" id="taskDesc" placeholder="Опис задачі" required>
+        <input type="date" id="taskStart" required>
+        <input type="number" id="taskDuration" placeholder="Тривалість (дні)" min="1" required>
+        <button type="submit">Додати задачу</button>
+      </form>
+    </section>
+
+    <section class="result-section">
+      <h2>Планувальник задач</h2>
+      <div id="rezult"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>2025 · Лабораторна робота №6 — Варіант 9</p>
+  </footer>
+
+</body>
+</html>
