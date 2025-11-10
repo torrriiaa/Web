@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;                     
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background: #f0f7ff;
+}
+
+/* сторінка */
+body {
+  display: flex;                  
+  flex-direction: column;           
+  min-height: 100vh;                
+}
+/* щапка та підвал*/
+header {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+footer {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px;
+  margin-top: auto;               
+}
+
+/*контент */
+main {
+  flex: 1;                       
+  padding: 0 20px;
+}
+
+h1, h2 {
+  margin: 10px 0;
+}
+
+/* секції*/
+section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/*елементи форми*/
+input, select, button {
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/*таблиці*/
+table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  width: auto;
+}
+
+td, th {
+  border: 1px solid #333;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.result-table {
+  margin-top: 10px;
+}
+
+/*фрукти*/
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #e9f5ff;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
