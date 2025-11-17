@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторна робота №9 - Студент / Магістр</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Лабораторна робота №9</h1>
+    <h2>Основи ООП у JavaScript (Варіант 9 - Студент / Магістр)</h2>
+  </header>
+
+  <nav class="site-nav">
+    <ul>
+      <li><a href="#goal" class="active">Мета</a></li>
+      <li><a href="#task">Завдання</a></li>
+      <li><a href="#result">Результат</a></li>
+    </ul>
+  </nav>
+
+  <main class="layout">
+    <div class="left-column">
+      <section id="goal" class="section">
+        <h2 class="headerText">Мета роботи</h2>
+        <p class="defaultText">
+          Закріпити навички роботи з класами, об’єктами та спадкуванням у JavaScript.
+          Навчитися створювати базові та похідні класи з використанням методів.
+        </p>
+      </section>
+
+      <section id="task" class="section">
+        <h2 class="headerText">Завдання</h2>
+        <p class="defaultText">
+          Базовий клас <b>Student</b> - поля: ім’я, середній бал. <br>
+          Метод: <code>getScholarship() = 3000 + 1000 * (s - 5)</code>. <br>
+          Нащадок <b>Master</b> - додає поле «спеціальність». <br>
+          Метод <code>getScholarshipWithBonus(m)</code> збільшує стипендію на m грн.
+        </p>
+
+        <form id="studentForm" class="form">
+          <label>Ім’я студента:</label>
+          <input type="text" id="name" placeholder="Петро" required />
+
+          <label>Середній бал:</label>
+          <input type="number" id="s" step="0.1" placeholder="5.0" required />
+
+          <label>Спеціальність:</label>
+          <input type="text" id="speciality" placeholder="Комп’ютерні науки" required />
+
+          <label>Надбавка (грн):</label>
+          <input type="number" id="m" step="1" placeholder="500" required />
+
+          <button type="submit">Обчислити стипендію</button>
+        </form>
+      </section>
+
+      <section id="result" class="section">
+        <h2 class="headerText">Результат</h2>
+        <div id="output" class="output">Після заповнення форми результат з’явиться тут...</div>
+      </section>
+    </div>
+
+    <aside class="right-column">
+      <section class="section">
+        <h2 class="headerText">Довідка</h2>
+        <p class="defaultText">
+          Класи в JavaScript дозволяють створювати об’єкти з однаковими властивостями і методами.
+          Спадкування дозволяє похідним класам розширювати можливості базового.
+        </p>
+        <p class="defaultText">
+          У цьому прикладі <b>Master</b> успадковує <b>Student</b> і додає свою властивість — спеціальність.
+        </p>
+      </section>
+
+      <footer>
+        <p>Виконав студент групи АНД-32<br>Котелевець Вікторія</p>
+      </footer>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
